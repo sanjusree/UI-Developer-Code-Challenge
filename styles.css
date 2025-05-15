@@ -1,0 +1,630 @@
+
+/* Base Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+header .logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+/* Intro Section */
+.intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.intro h1 {
+  color: #00743e;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.intro h2 {
+  margin-bottom: 10px; /* ensure both head and underline are close */
+}
+
+
+.intro .divider {
+  width: 60px;
+  height: 4px;
+  background-color: #00743e;
+  margin: 10px auto 20px auto;
+  border: none;
+}
+
+
+.intro p {
+  color: #777;
+  font-weight: 400;
+  font-size: 1.05em;
+  line-height: 1.8;
+  text-align: left;  /* Matches second image's relaxed layout */
+  max-width: none;
+  margin: 0 auto 30px auto;
+}
+
+
+.cta {
+  background-color: #f7931e;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  width: 200px;
+}
+
+
+
+.cta:hover {
+  background-color: #e07a15;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Advantages */
+
+
+.advantage-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  margin-top: 40px;
+  text-align: left;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px 40px; /* space between columns and rows */
+}
+
+
+
+.advantage-grid .advantage {
+  position: relative;
+  padding: 0 20px;
+}
+
+
+.advantage-grid .advantage:nth-child(odd)::after {
+  content: '';
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  right: 0;
+  width: 1px;
+  background-color: #ccc;
+}
+
+
+.advantage:nth-child(odd)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -30px;
+    width: 1px;
+    background-color: #ccc;
+}
+
+
+.advantage h3 {
+  color: #00743e;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.advantage p {
+  color: #555;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+
+.advantage a {
+  color: #00743e;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+
+p {
+  margin-bottom: 0;  /* removes space after the first paragraph */
+}
+
+
+
+.learn-more {
+  display: block;
+  margin-top: 0;
+  padding: 0;
+}
+
+.learn-more a {
+  color: #6aa327;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.05em;
+}
+
+.arrow {
+  margin-left: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.divider {
+  width: 60px;
+  height: 3px;
+  background-color: #00743e;
+  border: none;
+  margin: 10px auto 30px auto; /* Centered and spaced */
+}
+
+
+/* Heading style */
+h2 {
+  color: #00743e; /* Green color */
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.8em;
+  margin-top: 40px;
+}
+
+/* Link style */
+.advantage a {
+  color: #00743e;  /* Green color */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  text-align: center;
+  margin: 60px 0;
+}
+
+.testimonial {
+  padding: 20px;
+}
+
+.testimonial img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.testimonial blockquote {
+  font-style: italic;
+  color: #555;
+  line-height: 1.6;
+  max-width: 90%;
+  margin: 0 auto 10px auto;
+  position: relative;
+}
+
+.testimonial blockquote::before {
+  content: \"\\201C\";
+  font-size: 40px;
+  position: absolute;
+  left: -15px;
+  top: -10px;
+  color: #eee;
+}
+
+.testimonial p {
+  color: #00743e;
+  font-weight: 500;
+  font-size: 0.95em;
+  text-align: center;
+
+}
+
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+  }
+
+  .feature {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+
+  .intro h1 {
+    font-size: 1.8em;
+  }
+
+  .advantages h2 {
+    font-size: 1.5em;
+  }
+
+  .cta {
+    width: 90%;
+    margin: 20px auto;
+  }
+}
+
+
+
+.home-loans {
+  background-color: #f2f8f6;
+  margin-top: 60px;
+}
+
+/* .home-loans-heading {
+  background-color: #37905c;
+  color: #fff;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 500;
+  padding: 12px 20px;
+} */
+
+.home-loans-heading {
+  background-color: #37905c;
+  color: #fff;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 500;
+  padding: 12px 20px;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+ /* <-- added shadow */
+}
+
+
+
+
+.home-loans-content {
+  color: #555;
+  padding: 20px 30px;
+  font-size: 1em;
+  line-height: 1.6;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.footer-line {
+  border: none;
+  border-top: 2px solid #008000;
+  margin: 0 0 15px 0;
+}
+
+/* wrapper lines up ALL footer content */
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 40px;
+  /* ← left-hand indent for icons + text */
+}
+
+.social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.social img {
+  /* icon size */
+  width: 30px;
+  height: 30px;
+}
+
+/* disclaimer & legal lines */
+.disclaimer,
+.footer-legal {
+  margin: 0;
+  color: #555;
+  text-align: left !important;
+  line-height: 1.6;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+}
+
+.footer-legal {
+  font-size: 0.95em;
+}
+
+.footer-legal a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-legal a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* ───────────────────────────────
+   Break-point variables
+   ───────────────────────────── */
+
+/* ───────────────────────────────
+   1. Container + Global spacing
+   ───────────────────────────── */
+@media (max-width: 768px) {
+  .container {
+    width: 94%;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 96%;
+    padding: 10px;
+  }
+}
+
+/* ───────────────────────────────
+   2. Hero image
+   ───────────────────────────── */
+.hero-image {
+  width: 100%;
+  height: auto;
+}
+
+
+@media (max-width: 768px) {
+  .hero-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: 35% center;
+    display: block;
+  }
+}
+
+
+/* @media screen and (max-width: 767px) 
+{
+  .hero {
+    display: block;
+    width: 100%;
+    height: 400px; /* adjust height as needed */
+    overflow: hidden;
+    position: relative;
+  }
+
+  .hero-image {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top; /* Adjust to focus on the lady */
+    display: block;
+    margin: 0 auto;
+  }
+
+  .hero-overlay {
+    display: none;
+  }
+} */
+
+
+
+/* ───────────────────────────────
+   3. Intro section
+   ───────────────────────────── */
+@media (max-width: 480px) {
+  .intro {
+    h1 {
+      font-size: 1.55rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+      text-align: left;
+    }
+
+    .cta {
+      width: 100%;
+      font-size: 0.95rem;
+    }
+  }
+}
+
+/* ───────────────────────────────
+   4. Advantage grid → single column
+   ───────────────────────────── */
+@media (max-width: 768px) {
+  .advantage-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  };
+
+  .advantage-grid .advantage::after {
+    display: none;
+  }
+
+  /* ───────────────────────────────
+   ADVANTAGE GRID — responsive fix
+   ───────────────────────────── */
+
+  /* desktop default (already exists)  ----------
+.advantage-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  gap: 40px 60px;
+  margin-top: 40px;
+  text-align: left;
+}
+.advantage-grid .advantage:nth-child(odd)::after { … }  (vertical line)
+------------------------------------------------------ */
+
+  /* 1️⃣  Tablet & below (≤ 768 px)  */
+  @media (max-width: 768px) {
+    .advantage-grid {
+      grid-template-columns: 1fr;
+      /* stack to one column */
+      gap: 30px;
+      /* tighter vertical gap */
+    }
+
+    /* kill the vertical divider */
+    .advantage-grid .advantage:nth-child(odd)::after {
+      display: none;
+    }
+  }
+
+  /* 2️⃣  Mobile (≤ 480 px)  */
+  @media (max-width: 480px) {
+    .advantage-grid {
+      gap: 24px;
+      margin-top: 30px;
+    }
+
+    .advantage h3 {
+      font-size: 1.05rem;
+    }
+
+    .advantage p {
+      font-size: 0.9rem;
+      line-height: 1.45;
+    }
+  }
+
+
+  /* ───────────────────────────────
+   5. Home-loans ‘banner’
+   ───────────────────────────── */
+  @media (max-width: 480px) {
+    .home-loans-heading {
+      font-size: 1rem;
+      padding: 10px;
+    }
+
+    .home-loans-content {
+      padding: 15px;
+      font-size: 0.9rem;
+    }
+  }
+
+  /* ───────────────────────────────
+   6. Testimonials
+   ───────────────────────────── */
+  @media (max-width: 768px) {
+    .testimonials {
+      grid-template-columns: 1fr;
+      gap: 45px;
+    }
+
+    .testimonial img {
+      width: 90px;
+      height: 90px;
+    }
+
+    .testimonial blockquote {
+      font-size: 0.95rem;
+    }
+  }
+
+  /* ───────────────────────────────
+   7. Footer
+   ───────────────────────────── */
+ 
+ 
+   @media (max-width: 768px) {
+    .footer-wrapper {
+      padding-left: 20px;
+    }
+
+    footer .social img {
+      width: 26px;
+      height: 26px;
+    }
+
+    .disclaimer {
+      font-size: 0.85rem;
+    }
+
+    .footer-legal {
+      font-size: 0.85rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    footer .social {
+      gap: 10px;
+    }
+
+    .footer-wrapper {
+      padding-left: 15px;
+    }
+  }
+
